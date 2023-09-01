@@ -2,7 +2,7 @@ NAME = fdf
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -fsanitize=address
 
 FRAMEWORKS = -framework OpenGL -framework AppKit -g
 
