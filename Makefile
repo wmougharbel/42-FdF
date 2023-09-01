@@ -15,15 +15,11 @@ SOURCES = src/read_file.c src/utils.c src/utils2.c\
 
 INCLUDES = ft_printf/libftprintf.a mlx/libmlx.a
 
-GREEN := \033[0;32m
-RED := \033[0;31m
-RESET := \033[0m
-
 all:
 	@make -C ./ft_printf
 	@make -C ./mlx
 	@$(CC) $(SOURCES) -o $(NAME) $(FLAGS) $(INCLUDES) $(FRAMEWORKS)
-	@echo "$(GREEN)Compiled Successfully!$(RESET)"
+	@echo "\n=========Compiled Successfully!==========\n"
 
 clean:
 	@make clean -C ./ft_printf
@@ -33,6 +29,6 @@ fclean: clean
 	@make fclean -C ./ft_printf
 	@rm -f $(NAME)
 	@rm -rf fdf.dSYM
-	@echo "$(RED)Files Deleted Successfully$(RESET)"
+	@echo "\n=========Cleaned Successfully!==========\n"
 
 re: fclean all
