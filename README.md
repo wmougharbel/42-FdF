@@ -15,7 +15,7 @@ Key Features
 
     Color Mapping: Elevations are mapped to colors, creating a visually appealing representation of the landscape. Lower elevations may be blue, while higher elevations can be red, for example.
 
-    User Interaction: You can navigate through the terrain, zoom in/out, and rotate it to explore different parts of the landscape.
+    User Interaction: You can navigate through the terrain, zoom in/out, and change the perspective to explore different parts of the landscape.
 
     Bonus Features: FdF encourages creativity by offering bonus features, such as gradient coloring and smoothing algorithms, to enhance the visual quality of the terrain.
 
@@ -23,13 +23,13 @@ Getting Started
 
 To begin working on FdF, follow these steps:
 
-    Clone the repository to your local machine: git clone https://github.com/yourusername/FdF.git
+    Clone the repository to your local machine: git clone https://github.com/wmougharbel/FdF.git
 
     Navigate to the project directory: cd FdF
 
     Compile the project: make
 
-    Run the program with a heightmap file: ./fdf [filename]
+    Run the program with a heightmap file: ./fdf test_maps/filename.fdf
 
     Explore the 3D landscape and experiment with the available features.
 
