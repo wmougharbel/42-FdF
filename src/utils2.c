@@ -6,7 +6,7 @@
 /*   By: wmoughar <wmoughar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 12:43:50 by wmoughar          #+#    #+#             */
-/*   Updated: 2023/06/03 20:24:21 by wmoughar         ###   ########.fr       */
+/*   Updated: 2023/09/01 12:05:51 by wmoughar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ void	mlx_image(t_fdf *data, int x, int y)
 	if (x || y)
 		mlx_destroy_image(data->mlx_ptr, data->mlx_img->img);
 	if (x + y == 0)
-		ft_printf("%sDone!", "\e[4;32m");
+		ft_printf("Done!\n");
 	data->mlx_img->img = mlx_new_image(data->mlx_ptr, 4096, 2160);
 	data->mlx_img->addr = mlx_get_data_addr(data->mlx_img->img,
 			&data->mlx_img->bits_per_pixel,

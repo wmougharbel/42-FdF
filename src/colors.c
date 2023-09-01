@@ -6,7 +6,7 @@
 /*   By: wmoughar <wmoughar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 12:04:51 by wmoughar          #+#    #+#             */
-/*   Updated: 2023/06/06 11:15:16 by wmoughar         ###   ########.fr       */
+/*   Updated: 2023/09/01 12:06:43 by wmoughar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	ft_menu(t_fdf *data)
 {
-	// mlx_string_put(data->mlx_ptr, data->mlx_window, 10, 10, 0xffffff,
-	// 	"Move: W-S-A-D");
-	// mlx_string_put(data->mlx_ptr, data->mlx_window, 10, 35, 0xffffff,
-	// 	"Zoom: Mouse Wheel");
-	// mlx_string_put(data->mlx_ptr, data->mlx_window, 10, 60, 0xffffff,
-	// 	"Change View: Left Click");
-	// mlx_string_put(data->mlx_ptr, data->mlx_window, 10, 85, 0xffffff,
-	// 	"Change Depth: Arrow Up - Arrow Down");
+	mlx_string_put(data->mlx_ptr, data->mlx_window, 10, 10, 0xffffff,
+		"Move: W-S-A-D");
+	mlx_string_put(data->mlx_ptr, data->mlx_window, 10, 35, 0xffffff,
+		"Zoom: Mouse Wheel");
+	mlx_string_put(data->mlx_ptr, data->mlx_window, 10, 60, 0xffffff,
+		"Change View: Left Click");
+	mlx_string_put(data->mlx_ptr, data->mlx_window, 10, 85, 0xffffff,
+		"Change Depth: Arrow Up - Arrow Down");
 }
 
 void	color(t_fdf *data, float x_e, float y_e)

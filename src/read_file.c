@@ -6,7 +6,7 @@
 /*   By: wmoughar <wmoughar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 13:04:25 by wmoughar          #+#    #+#             */
-/*   Updated: 2023/06/03 16:56:52 by wmoughar         ###   ########.fr       */
+/*   Updated: 2023/09/01 12:06:07 by wmoughar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ void	color_matrix(t_fdf *data)
 
 void	read_map(t_fdf *data, char *map)
 {
-	ft_printf("%sLaunching...\n", "\e[36m");
+	ft_printf("Launching...\n");
 	data->map = map;
 	get_height(data);
 	get_width(data);

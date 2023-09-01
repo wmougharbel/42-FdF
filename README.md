@@ -43,3 +43,6 @@ FdF is designed to teach you the following concepts:
     Color mapping and gradient creation
     User interaction and controls
     Problem-solving and algorithmic thinking
+
+
+![Screenshot][screenshot_fdf.png]
