@@ -6,7 +6,7 @@
 /*   By: wmoughar <wmoughar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 14:10:47 by wmoughar          #+#    #+#             */
-/*   Updated: 2023/06/03 20:26:13 by wmoughar         ###   ########.fr       */
+/*   Updated: 2023/09/01 12:21:08 by wmoughar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void	draw(t_fdf *data, float x_steps, float y_steps)
 
 void	position_zoom(t_fdf *data, float x_e, float y_e)
 {
+	printf("%f\n", data->zoom);
 	data->l->x_s = data->l->l_x_s * data->zoom;
 	data->l->x_e = x_e * data->zoom;
 	data->l->y_s = data->l->l_y_s * data->zoom;
@@ -58,7 +59,8 @@ void	ft_dda(t_fdf *data, float x_e, float y_e)
 	data->l->z_s = data->z_matrix[(int)data->l->l_y_s][(int)data->l->l_x_s];
 	data->l->z_e = data->z_matrix[(int)y_e][(int)x_e];
 	color(data, x_e, y_e);
-	position_zoom(data, x_e, y_e);
+	if (data->zoom >= 5.0)
+		position_zoom(data, x_e, y_e);
 	if (data->projection)
 	{
 		data->l->x_s = (data->l->x_s - data->l->y_s) * 0.5;

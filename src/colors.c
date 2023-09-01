@@ -6,7 +6,7 @@
 /*   By: wmoughar <wmoughar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 12:04:51 by wmoughar          #+#    #+#             */
-/*   Updated: 2023/09/01 12:06:43 by wmoughar         ###   ########.fr       */
+/*   Updated: 2023/09/01 12:21:47 by wmoughar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	color(t_fdf *data, float x_e, float y_e)
 
 	if (!ft_strchr(data->color_matrix[(int)data->l->l_y_s]
 			[(int)data->l->l_x_s], ','))
-	{	
+	{
 		color = ft_split(data->color_matrix[(int)data->l->l_y_s]
 			[(int)data->l->l_x_s], ',');
 		data->color = hex_to_decimal(color[1]);
