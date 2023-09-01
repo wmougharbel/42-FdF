@@ -1,7 +1,7 @@
 ![](screenshot_fdf.png)
 
 # FdF
-##Introduction
+## Overview
 
 FdF (Fil de Fer) is a graphical project in the 42 curriculum designed to introduce students to the fundamentals of 3D graphics programming. Developed as part of the 42 education program, this project challenges students to create a wireframe 3D representation of a landscape defined by heightmaps. FdF serves as a stepping stone for aspiring programmers to delve into the fascinating world of computer graphics.
 Project Overview
